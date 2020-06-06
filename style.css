@@ -1,0 +1,49 @@
+body{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.time{
+    float: right;
+}
+
+.highscores {
+    float: left
+}
+
+#start{
+    text-align: center;
+}
+
+#question{
+    margin-top: 50px;
+    text-align: center;
+}
+
+#options{
+    margin-top: 50px;
+    text-align: center;
+}
+
+#finished{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+#clear {
+    text-align: center;
+}
+
+#highscores {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+

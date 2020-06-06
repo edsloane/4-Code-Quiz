@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- High Score Link -->
+    <div class="highscores"><a href="./highscores.html">View Highscores</a></div>
+    
+    <!-- Time/Time Counter -->
+    <div class = "time">Time: <span id="time-counter">0</span></div>
+    <br>
+    <!-- Quiz Container -->
+    <div id="container">
+
+    <!-- Start Screen (to be hidden on button press) -->
+        <div id="start">
+            <h1>Coding Quiz</h1>
+            <p>Try to answer the following code-related questions within the time
+                limit. 
+            </p>
+                
+            <p>  Keep in mind that incorrect answers will penalize your
+                score/time by ten seconds!
+            </p>
+        
+         <!-- Start Button -->
+            <button id="start-quiz">Start Quiz</button>
+        </div>
+
+    <!-- Questions -->
+        <div id="questions" style="display: none"></div>
+            <div id="question"></div>
+            <div id ="options" class="options"></div>
+        </div>
+
+    <!-- Final Screen -->
+        <div id="finished" style="display: none">
+            <h2>The End</h2>
+            <p>You scored <span id="final-score"></span> points.</p>
+            <p>
+              Enter initials: <input type="text" id="initials"/>
+              <button id="submit">Submit</button>
+            </p>
+          </div>
+        <div id="scoreContainer" style="display: none"></div>
+    </div>
+
+    <script src="./quiz.js"></script>
+</body>
+</html>
